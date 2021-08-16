@@ -1,0 +1,10 @@
+site_name: pytest-basic-types
+site_description: Predefined basic types to help with testing.
+site_author: Tyler Bruno
+
+theme: readthedocs
+
+repo_url: https://github.com/tybruno/pytest-basic-types
+
+pages:
+- Home: index.md
