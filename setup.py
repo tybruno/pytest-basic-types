@@ -1,27 +1,28 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import os
-import codecs
 from setuptools import setup
+__version__ = "0.1.0"
+__author__ = "Tyler Bruno"
 
+with open("README.md", "r", encoding="utf-8") as file:
+    README = file.read()
 
-def read(fname):
-    file_path = os.path.join(os.path.dirname(__file__), fname)
-    return codecs.open(file_path, encoding='utf-8').read()
+with open("requirements.txt", "r") as file:
+    INSTALL_REQUIRES = file.read().splitlines()
 
 
 setup(
     name='pytest-basic-types',
-    version='0.1.0',
-    author='Tyler Bruno',
+    version=__version__,
+    author=__author__,
     author_email='tybruno@cisco.com',
     maintainer='Tyler Bruno',
     maintainer_email='tybruno@cisco.com',
     license='MIT',
     url='https://github.com/tybruno/pytest-basic-types',
     description='Predefined basic types to help with testing.',
-    long_description=read('README.rst'),
+    long_description=README,
     py_modules=['pytest_basic_types'],
     python_requires='>=3.5',
     install_requires=['pytest>=3.5.0'],
