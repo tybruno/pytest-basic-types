@@ -25,7 +25,7 @@ setup(
     long_description=README,
     py_modules=['pytest_basic_types'],
     python_requires='>=3.5',
-    install_requires=['pytest>=3.5.0'],
+    install_requires=INSTALL_REQUIRES,
     classifiers=[
         'Development Status :: 4 - Beta',
         'Framework :: Pytest',

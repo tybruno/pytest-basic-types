@@ -1,1 +1,2 @@
 converters @ git+https://github.com/tybruno/converters#egg=converters
+pytest>=3.5.0
